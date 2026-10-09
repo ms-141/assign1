@@ -346,6 +346,15 @@ footer hr {
     align-items: center;
     margin: 10px 0;
 }
+#valueLetter1{
+    color: chartreuse;
+}
+#valueLetter2{
+    color: royalblue;
+}
+#valueLetter3{
+    color: gold;
+}
 .vCardTitle{
     font-family: 'Inconsolata';
     font-size: x-large;
