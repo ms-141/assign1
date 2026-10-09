@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: rgb(24, 27, 38);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+#navTitle h1 {
+    padding: 10px;
+}
+
+#navSlashes {
+    color: rgb(196 150 42);
+}
+
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: 1px;
+    
+    cursor: pointer;
+}
+
+.navLink {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.navLink:hover {
+    background-color: rgb(58, 72, 93);
+}
+nav a.active {
+   background-color: rgb(58, 72, 93); 
+}
+
+#heroText {
+    align-content: center;
+    
+}
+
+#heroCard {
+    display: flex;
+    min-height: 28vh;
+    background-color: rgb(41 45 63);
+    color: white;
+    justify-content: center;
+    padding: 2rem 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+#heroDetails {
+    display: flex;
+    flex-direction: column;
+}
+#heroText{
+    margin: 10px 0px;
+    color: rgb(170 174 190);
+}
+
+#heroCard button {
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: rgb(206 166 61);
+    border: none;
+    border-radius: 5%;
+}
+#heroCard button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#featuredProducts {
+    background-color: rgb(243 244 247);
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#featuredProducts h3 {
+    margin:  10px 0;
+}
+#featuredProductsContainer {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.featProdCard{
+    border: solid rgb(227 229 234) 1px;
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    margin: 5px;
+    border-top: green solid 3px;
+}
+.featProdCard:hover{
+    border: solid black 1px;
+    border-top: solid rgb(206 166 61) 3px;
+}
+.cardImage {
+    display: flex;
+    min-width: 80%;
+}
+
+.featProdCard div img {
+    width: 90%;
+    margin: 60px 40px;
+}
+
+.featProdCard div {
+    display: flex;
+    justify-content: center;
+}
+
+.featProdCardDetails{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: smaller;
+}
+
+.featProdCardDetails button {
+    padding: 7px ;
+    margin: 7px;
+    background-color: white;
+    border: solid black 1px;
+}
+.featProdCardDetails a {
+    text-decoration: none;
+    color: inherit;
+}
+.featProdCardDetails button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.featProdTitle{
+    margin: 5px;
+}
+.featProdPrice{
+    margin: 5px;
+    font-family: 'Inconsolata';
+}
+#elevatorPitch {
+    padding: 15px;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#elevatorPitch h3{
+    margin: 25px 0;
+}
+#elevatorPitch p{
+    margin: 15px 0;
+    color: rgb(127, 128, 134);
+    font-size: small;    
+}
+#pitchContent {
+    width: 50%;
+    text-align: left;
+}
+
+
+footer {
+    background-color: rgb(24 27 37);
+    color: rgb(170 174 190);
+    font-size: small;
+    padding: 20px 10px;
+}
+footer hr {
+    border: none;
+    border-top: 1px solid rgb(74, 72, 72);
+    margin-top: 30px;
+}
+
+#footerColumns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#footerColumns strong {
+    color: white;
+
+}
+#footerColumns p {
+    margin: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+#footerCopywright{
+    margin: 15px;
+}
+
+#getInTouch{
+    background-color: rgb(243 244 247);
+    padding: 50px 100px;
+}
+
+#getInTouch h2 {
+    font-family: 'Inconsolata';
+
+}
+#contactCards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.contactCard{
+    background-color: white;
+    padding: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.contactCard h4 {
+    margin-bottom: 15px;
+    font-family: 'Inconsolata';
+    font-size: large;
+}
+
+#ourJourney{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#ourJourney > h3{
+    text-align: center;
+}
+#timeLine{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inconsolata';
+    margin: 30px 100px;   
+    
+}
+#timeLine h3{
+    color: rgb(35, 106, 66);
+}
+.timeEntry{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.timeEntry h3{
+    margin-bottom: 10px;
+}
+#meetTeam{
+    background-color: rgb(243 244 247);
+    padding: 20px 100px;
+}
+#meetPeople{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.people img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.people{
+    font-size: small;
+}
+.peopleTitle{
+    font-family: 'Inconsolata';
+    font-size: large;
+    color: rgb(190, 167, 40);
+    margin: 5px 0;
+}
+.peopleName{
+    font-family: 'Inconsolata';
+    font-size: x-large;
+    margin: 5px 0;
+}
+.peopleDesc{
+    margin: 5px 0;
+}
+#meetIntro{
+    margin: 15px 0;
+}
+#meetIntro h3 {
+    margin: 10px 0;
+}
+#meetIntro p {
+    margin: 10px 0;
+}
+
+
+#ourValues{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 40px;
+}
+#ourValues>h3{
+    text-align: center;
+}
+#valueCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    padding: 20px;
+    gap: 20px;
+    margin-top: 25px;
+}
+.valueCard{
+    padding: 20px;
+    background-color: rgb(243 244 247);
+}
+.vCardLetter{
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.vCardTitle{
+    font-family: 'Inconsolata';
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+
+#ourStory{
+    background-color: rgb(243 244 247);;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    padding: 50px;
+    place-items: center;
+}
+#ourStory h3 {
+    font-size: x-large;
+}
+#aboutHero {
+    display: grid;
+    place-items: center;
+    min-height: 28vh;
+    background-color: rgb(41 45 63);
+    color: white;
+    font-family: 'Inconsolata';
+}
+.aboutContent p {
+    color: rgb(170 174 190);
+    margin-top: 15px;
+}
+
+
+
+#breadCrumb{
+    margin-left: 40px;
+    font-family: 'Inconsolata';
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#productPage{
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgb(244 244 247);
+}
+#product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+#prodTitle{
+    margin-bottom: 10px;
+}
+#prodDisplay > img {
+    width: 100%;
+}
+#underImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#underImages img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* FROM GOOGLE GEMINI PROMPT: "how to make stars in css" */
+.star {
+  width: 100px;
+  /* Stars are slightly wider than they are tall (~1 to 1.07 ratio) */
+  aspect-ratio: 1 / 1.07; 
+  background-color: rgb(217 174 64);
+  
+  /* X Y coordinates for the 5 points and 5 inner corners */
+  clip-path: polygon(
+    50% 0%, 
+    63% 38%, 
+    100% 38%, 
+    69% 59%, 
+    82% 100%, 
+    50% 75%, 
+    18% 100%, 
+    31% 59%, 
+    0% 38%, 
+    37% 38%
+  ); 
+}
+#stars{
+    display: flex;
+    width: 60px;
+    color: rgb(217 174 64);
+    /* margin-top: 10px; */
+}
+#rating{
+    display: flex;
+    color:rgb(217 174 64);
+    align-items: center;
+    
+}
+#rating p {
+    font-size: small;
+    margin-left: 5px;
+    /* margin-top: 10px; */
+}
+#prodPrice {
+    font-family: 'Inconsolata';
+    margin: 20px 0;
+}
+#prodDesc{
+    font-size: smaller;
+    color: rgb(137 136 142);
+}
+#prodSizes{
+    margin: 15px 0;
+}
+#sizeOptions{
+    display: flex;
+    margin: 10px 0;
+}
+.sizeOption{
+    margin-right: 7px;
+    border: solid rgb(137 136 142) 1px;
+    padding: 9px;
+    font-size: x-small;
+    cursor: pointer;
+    color: rgb(127, 128, 134);
+}
+.sizeOption:hover{
+    color: white;
+    background-color: black;
+}
+#prodColours{
+    margin-top: 10px;
+}
+#prodColours h5{
+    display: flex;
+}
+#colourOptions{
+    display: flex;
+    margin: 10px 0;
+
+}
+.colourOption{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    border: solid rgb(244 244 247) 1px;
+}
+.colourOption:hover{
+    border: solid black 1px;
+}
+
+#colour1 { 
+    background-color: rgb(235 233 224); 
+}
+#colour2 {
+     background-color: rgb(60 64 72); 
+}
+#colour3 {
+     background-color: rgb(28 38 72);
+}
+#colour4 {
+     background-color: rgb(196 100 40);
+}
+
+#quantity{
+    margin-top: 5px;
+}
+#quantityBox{
+    background-color: white;
+    width: 80px;
+    border: solid 1px rgb(244 244 247) ;
+    margin: 10px 0;
+}
+#quantityBox p {
+    padding: 3px;
+    margin-left: 5px;
+    font-family: 'Inconsolata';
+}
+#prodButtons{
+    margin-top: 5px;
+}
+#prodCart{
+    background-color: rgb(205 168 61);
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+#prodCart:hover{
+    background-color: black;
+    color: rgb(205 168 61);
+}
+#prodWish{
+    background-color: rgb(244 244 247);
+    color: black;
+    border: solid black 1px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+#prodWish:hover{
+    color: rgb(244 244 247);
+    background-color: black;
+}
+#productPage hr {
+    border: none;
+    border-top: 1px solid rgb(200 201 205);
+    margin-top: 20px;
+}
+#prodTabs{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border-bottom: solid rgb(200 201 205) 1px;   
+}
+#prodTabs p {
+    margin-right: 15px;
+    cursor: pointer;
+}
+#prodDetailGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#prodDetails h3{
+    margin: 20px 0;
+}
+#prodDetails> p{
+    color: rgb(127, 128, 134);
+    text-align: justify;
+}
+#desc{
+    padding-bottom: 10px;
+    border-bottom: solid rgb(205 168 61);
+}
+
+#keyFeatures{
+    margin: 40px 0;
+}
+#featureBox{
+    font-size: small;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#featureBox hr{
+    margin-bottom: 18px;
+}
+.feature{
+    font-family: 'Inconsolata';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+.feature p {
+   font-size: small; 
+}
+.reviewDate{
+    margin-left: auto;
+    font-family: 'Inconsolata';
+}
+.reviewDesc {
+    padding-right: 300px;
+}
+.reviewTitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.reviewTitle h4 {
+    margin-right: 15px;
+}
+#custyReviews{
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+#custyReviews h3{
+    margin: 15px 0;
+}
+
+/*FROM GOOGLE GEMINI prompt: "make me css empty stars" */
+.star-empty {
+  width: 100px;
+  aspect-ratio: 1 / 1.07;
+  background-color: rgb(217 174 64);
+  
+  /* Adjusted inner coordinates (moved closer to the center) to make the star walls thicker */
+  clip-path: polygon(
+    50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%,
+    50% 0%, 
+    39% 46%, 15% 46%, 37% 62%, 29% 88%, 50% 70%, 71% 88%, 63% 62%, 85% 46%, 61% 46%, 50% 21%
+  );
+}
+
+
